@@ -1,0 +1,664 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <script type="text/javascript" src="./js/jquery.mini.js"></script>
+    <link rel="stylesheet" href="./js/jquery-ui.css">
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./js/bootstrap.mini.css">
+
+    <style>
+        table td {
+            padding: 5px;
+
+        }
+    </style>
+
+    <style type="text/css">
+        @media print {
+            .noprint {
+                display: none;
+            }
+        }
+    </style>
+
+    <style type="text/css">
+        P.breakhere {
+            page-break-before: always
+        }
+    </style>
+
+    <script language="javascript">
+        function ValidateDeclaration() {
+            if (document.getElementById("CheckDeclaration").checked == false) {
+                alert('Pleae select declaration before proceeding further...')
+                document.getElementById("CheckDeclaration").focus();
+                return false;
+            }
+            if (document.getElementById("CheckDeclaration").checked == true) {
+                //alert('true');
+                $('#myModal').modal('hide');
+                //document.forms[0].submit();
+                return true;
+
+            }
+            else {
+                $('#myModal').modal('hide');
+                return false;
+            }
+            return true;
+        }
+
+
+        function forAgree() {
+            if (document.getElementById("Agree").checked == false) {
+                document.getElementById("submit").disabled = true;
+            }
+            else {
+                document.getElementById("submit").disabled = false;
+            }
+        }
+        function Close() {
+            var win = window.open("about:blank", "_self");
+            //var win=window.open('','_parent','');
+            win.close();
+        }
+
+    </script>
+
+    <title>
+        IGNOU DEC-2024: HALL TICKET/ADMIT CARD
+    </title>
+
+
+    <script language="javascript">
+        function ValidateDeclaration() {
+            if (document.getElementById("CheckDeclaration").checked == false) {
+                alert('Pleae select declaration before proceeding further...')
+                document.getElementById("CheckDeclaration").focus();
+                return false;
+            }
+            if (document.getElementById("CheckDeclaration").checked == true) {
+                //alert('true');
+                $('#myModal').modal('hide');
+                //document.forms[0].submit();
+                return true;
+
+            }
+            else {
+                $('#myModal').modal('hide');
+                return false;
+            }
+            return true;
+        }
+
+
+
+
+        function validate() {
+            var varCount = 0;
+            if (document.getElementById("txtEnrNo").value != '') varCount++
+            if (document.getElementById("ddlProgram").value != '') varCount++
+            if (varCount != 2) {
+                alert("Please enter Enrolment No. & Program...")
+                document.getElementById("txtEnrNo").focus();
+                return false;
+            }
+
+            $('#myModal').modal('show');
+            return false;
+
+            //return true;
+
+        }
+    </script>
+</head>
+
+
+
+
+<body>
+
+    <div>
+
+        <form name="frm" method="post">
+            <div align="center">
+                <table width="95%" border="1">
+                    <tbody>
+                        <tr class="td3">
+                            <td colspan="3">
+                                <table width="100%" border="0">
+                                    <tbody>
+                                        <tr class="td3" style="text-align:center">
+                                            <td width="20%" valign="top"><img src="logo.jpg" height="70"></td>
+                                            <td valign="top">
+                                                <div align="center"> <b>
+                                                        <font size="+1">
+                                                            इंदिरा गांधी राष्ट्रीय मुक्त विश्वविद्यालय</font><br>
+                                                        Indira Gandhi National Open University<br>
+                                                        (केंद्रीय विश्वविद्यालय / A Central University)<br>
+
+                                                    </b></div>
+                                            </td>
+                                            <td valign="top" width="20%"> <img src="naac.png" height="90"> </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr class="td2">
+                            <td width="75%" colspan="2">दिसंबर-2024, सत्रांत परीक्षा (टीईई)/ DEC-2024, Term End
+                                Examination (TEE)<br>
+
+                                08/12/2024 10:19:27
+                            </td>
+                            <td width="25%" rowspan="7" valign="middle">
+                                <div align="center">
+                                    <u><b>फोटोग्राफ/ Photograph</b></u>
+
+                                    <img src="https://ignou-admission-2021-jan.s3.ap-south-1.amazonaws.com/af3c44fd8933b6e21641fea8ca0b5259f279c2e9446d208a82f0990ac0a287c52210114511S/af3c44fd8933b6e21641fea8ca0b5259f279c2e9446d208a82f0990ac0a287c52210114511S_BCA_1643387961_1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWNEKEDMKLTTL44F4%2F20241208%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241208T044927Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=1800&amp;X-Amz-Signature=703e742df07236f77347b52392fe1bbd5dd4ca6c551d374b8546f54b6fe3f371"
+                                        height="140" width="160">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="td3" style="text-align:center;font-weight:bold">
+                            <td colspan="2">हाल टिकट/ प्रवेश पत्र-Hall Ticket/Admit Card
+
+                            </td>
+                        </tr>
+                        <tr class="td3">
+                            <td width="37%">1. अनुक्रमांक / Enrollment Number:</td>
+                            <td width="37%">
+                                <font size="+1"><b>2200362274</b></font>
+                            </td>
+                        </tr>
+                        <tr class="td3">
+                            <td>2. प्रोग्राम कोड / Programme Code :</td>
+                            <td width="37%">BCA</td>
+                        </tr>
+                        <tr class="td3">
+                            <td>3. प्रोग्राम का नाम / Programme Name:</td>
+                            <td width="37%">BCA</td>
+                        </tr>
+                        <tr class="td3">
+                            <td>4. परीक्षार्थी का नाम /Name of the Student:</td>
+                            <td width="37%">MUHAMMAD NASIF</td>
+                        </tr>
+                        <tr class="td3">
+                            <td>5. परीक्षा केन्द्र कोड / Exam Centre Code:</td>
+                            <td width="37%">83018</td>
+                        </tr>
+                        <tr class="td3">
+                            <td>6. परीक्षण का तरीका:-<!-- Mode of Test <br /-->कंप्यूटर आधारित टेस्ट (सीबीटी)/पेन और
+                                पेपर <br>
+                                Mode of Exam:-Computer Based Test(CBT)/ Pen &amp; Paper</td>
+                            <td width="37%">
+                                <font size="+1"><b>Pen and Paper Test</b></font>
+                            </td>
+                        </tr>
+                        <tr class="td3">
+                            <td colspan="2" valign="top">
+                                7. परीक्षा केन्द्र का पता / Exam Centre Address:<br><br>
+                                MM KNOWLEDGE ARTS &amp; SCIENCE COLLEGE<br>KARAKKUNDU, THIRUVATTOOR&nbsp;PARIYARAM,
+                                TALIPARAMBA<br>KANNUR, KERALA-670011
+
+                            </td>
+                            <td style="text-align:center"><img
+                                    src="data:image/png;base64,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TOPsBSX6UZrSaONyabRhSqON9b12dLMpjTYul0YbTbWjm01ptGFKo42m0mijqTTaMKXRxuXSaMM0zl5Qoh+lKY02LpdGG6Y02ljfa0c3m9Jo43JptNFUO7rZlEYbpjTaaCqNNppKow1TGm1cLo02TOPsBSX6UZrSaONyabRhSqON9b12dLMpjTYul0YbTbWjm01ptGFKo42m0mijqTTaMKXRxuXSaMM0zl5Qoh+lKY02LpdGG6Y02ljfa0c3m9Jo43JptNFUO7rZlEYbpjTaaCqNNppKow1TGm1cLo02TOPsBSX6UZrSaONyabRhSqON9b12dLMpjTYul0YbTbWjm01ptGFKo42m0mijqTTaMKXRxuXSaMM0zl5Qoh+lKY02LpdGG6Y02ljfa0c3m9Jo43JptNFUO7rZlEYbpjTaaCqNNppKow1TGm1cLo02TOPsBSX6UZrSaONyabRhSqON9b12dLMpjTYul0YbTbWjm01ptGFKo42m0mijqTTaMKXRxuXSaMM0zl5Qoh+lKY02LpdGG6Y02ljfa0c3m9Jo43JptNFUO7rZlEYbpjTaaCqNNppKow1TGm1cLo02TOPsBSX6UZrSaONyabRhSqON9b12dLMpjTYul0YbTbWjm01ptGFKo42m0mijqTTaMKXRxuXSaMM0zl5Qoh+lKY02LpdGG6Y02ljfa0c3m9Jo43JptNFUO7rZlEYbpjTaaCqNNppKow1TGm1cLo02TOPsBSX6UZrSaONyabRhSqON9b12dLMpjTYul0YbTbWjm01ptGFKo42m0mijqTTaMKXRxuXSaMM0zl5Qoh+labrQNzKl0YYpjTaami70jUzt6GZTGm00lUYbpjTauFw7utmURhum6ULfyDTOXlCiH6VputA3MqXRhimNNpqaLvSNTO3oZlMabTSVRhumNNq4XDu62ZRGG6bpQt/INM5eUKIfpWm60DcypdGGKY02mpou9I1M7ehmUxptNJVGG6Y02rhcO7rZlEYbpulC38g0zl5Qoh+labrQNzKl0YYpjTaami70jUzt6GZTGm00lUYbpjTauFw7utmURhum6ULfyDTOXlCiH6VputA3MqXRhimNNpqaLvSNTO3oZlMabTSVRhumNNq4XDu62ZRGG6bpQt/INM5eUKIfpWm60DcypdGGKY02mpou9I1M7ehmUxptNJVGG6Y02rhcO7rZlEYbpulC38g0zl5Qoh+labrQNzKl0YYpjTaami70jUzt6GZTGm00lUYbpjTauFw7utmURhum6ULfyDTOXlCiH6VputA3MqXRhimNNpqaLvSNTO3oZlMabTSVRhumNNq4XDu62ZRGG6bpQt/INM5eUKIfpWm60DcypdGGKY02mpou9I1M7ehmUxptNJVGG6Y02rhcO7rZlEYbpulC38g0zl5Qoh+labrQNzKl0YYpjTaami70jUzt6GZTGm00lUYbpjTauFw7utmURhum6ULfyDTOXlCiH6VputA3MqXRhimNNpqaLvSNTO3oZlMabTSVRhumNNq4XDu62ZRGG6bpQt/INM5eUKIfpWm60DcypdGGKY02mpou9I1M7ehmUxptNJVGG6Y02rhcO7rZlEYbpulC38g0zl5Qoh+labrQNzKl0YYpjTaami70jUzt6GZTGm00lUYbpjTauFw7utmURhum6ULfyDTOXlCiH6VputA3MqXRhimNNpqaLvSNTO3oZlMabTSVRhumNNq4XDu62ZRGG6bpQt/INM5eUKIfpWm60DcypdGGKY02mpou9I1M7ehmUxptNJVGG6Y02rhcO7rZlEYbpulC38g0zl5Qoh+labrQNzKl0YYpjTaami70jUzt6GZTGm00lUYbpjTauFw7utmURhum6ULfyDTOXlCiH6VputA3MqXRhimNNpqaLvSNTO3oZlMabTSVRhumNNq4XDu62ZRGG6bpQt/INM5eUKIfpWm60DcypdGGKY02mpou9I1M7ehmUxptNJVGG6Y02rhcO7rZlEYbpulC38g0zl5Qoh+labrQNzKl0YYpjTaami70jUzt6GZTGm00lUYbpjTauFw7utmURhum6ULfyDTOXlCiH6VputA3MqXRhimNNpqaLvSNTO3oZlMabTSVRhumNNq4XDu62ZRGG6bpQt/INM5eUKIf5Vo/lUYbpjTaMKXRhimNNkxptGFKow1TGm2Y0mjDlEYbpjTaMKXRhimNNkxptGFKo421fmqcvaBEP8q1fiqNNkxptGFKow1TGm2Y0mjDlEYbpjTaMKXRhimNNkxptGFKow1TGm2Y0mjDlEYba/3UOHtBiX6Ua/1UGm2Y0mjDlEYbpjTaMKXRhimNNkxptGFKow1TGm2Y0mjDlEYbpjTaMKXRhimNNtb6qXH2ghL9KNf6qTTaMKXR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NpqaLvsiEv3ITdOFvpGpHd1sakc3NzUOvakpjTZM49CbXq4d3WxKo42m2tHNpjTaaGq67ItI9CM3TRf6RqZ2dLOpHd3c1Dj0pqY02jCNQ296uXZ0symNNppqRzeb0mijqemyLyLRj9w0XegbmdrRzaZ2dHNT49CbmtJowzQOvenl2tHNpjTaaKod3WxKo42mpsu+iEQ/ctN0oW9kakc3m9rRzU2NQ29qSqMN0zj0ppdrRzeb0mijqXZ0symNNpqaLvsiEv3ITdOFvpGpHd1sakc3NzUOvakpjTZM49CbXq4d3WxKo42m2tHNpjTaaGq67ItI9CM3TRf6RqZ2dLOpHd3c1Dj0pqY02jCNQ296uXZ0symNNppqRzeb0mijqemyL3Ic/RGa0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BR5H/+iY0mjD1I5uvlwabVwujTZMabRheg29QVPt6GZTGm00lUYbTaXRhimNNpqa+U37BUr0R91UGm00lUYbpjTaaCqNNkzj0Juu76XRRlNptGFKo42m2tHNpnHoTU1ptLG+N85eUKIfZVNptNFUGm2Y0mijqTTaMI1Db7q+l0YbTaXRhimNNppqRzebxqE3NaXRxvreOHtBiX6UTaXRRlNptGFKo42m0mjDNA696fpeGm00lUYbpjTaaKod3Wwah97UlEYb63vj7AUl+lE2lUYbTaXRhimNNppKow3TOPSm63tptNFUGm2Y0mijqXZ0s2kcelNTGm2s742zF5ToR9lUGm00lUYbpjTaaCqNNkzj0Juu76XRRlNptGFKo42m2tHNpnHoTU1ptLG+N85eUKIfZVNptNFUGm2Y0mijqTTaMI1Db7q+l0YbTaXRhimNNppqRzebxqE3NaXRxvreOHtBiX6UTaXRRlNptGFKo42m0mjDNA696fpeGm00lUYbpjTaaKod3Wwah97UlEYb63vj7AUl+lE2lUYbTaXRhimNNppKow3TOPSm63tptNFUGm2Y0mijqXZ0s2kcelNTGm2s742zF5ToR9lUGm00lUYbpjTaaCqNNkzj0Juu76XRRlNptGFKo42m2tHNpnHoTU1ptLG+N85eUKIfZVNptNFUGm2Y0mijqTTaMI1Db7q+l0YbTaXRhimNNppqRzeb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P/UaeoOm0mjjcjOX0G/c1I5uvlw7utmURhumdnSzaW7bF5boj2atn3oNvUFTabRxuZlL6Dduakc3X64d3WxKow1TO7rZNLftC0v0R7PWT72G3qCpNNq43P/ffr3bWhLEMBTMP+q3CXCMpdoQdKsA2t2Yj3HgkvSNT7ZduvPlbZfuPNlr6YzJtkt3nozbvOGh9NOYfe3XpGewaa+lMy4PLknf+GTbpTtf3nbpzpO9ls6YbLt058m4zRseSj+N2dd+TXoGm/ZaOuPy4JL0jU+2Xbrz5W2X7jzZa+mMybZLd56M27zhofTTmH3t16RnsGmvpTMuDy5J3/hk26U7X9526c6TvZbOmGy7dOfJuM0bHko/jdnXfk16Bpv2Wjrj8uCS9I1Ptl268+Vtl+482WvpjMm2S3eejNu84aH005h97dekZ7Bpr6UzLg8uSd/4ZNulO1/edunOk72Wzphsu3TnybjNGx5KP43Z135Negab9lo64/LgkvSNT7ZduvPlbZfuPNlr6YzJtkt3nozbvOGh9NOYfe3XpGewaa+lMy4PLknf+GTbpTtf3nbpzpO9ls6YbLt058m4zRsGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACAgqAGAACA//b39w93clLKTX6SmgAAAABJRU5ErkJggg=="
+                                    style="height:130px;width:130px;border-width:0px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <table width="95%" border="1">
+                    <tbody>
+                        <tr class="td3">
+                            <td colspan="3">
+                                <b>परीक्षा समय सारणी/Exam Time Table</b>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+<table width="95%" border="1">
+    <tbody>
+        <tr class="td3" style="font-weight:bold">
+            <td width="25%">परीक्षा का दिनाँक <br>Date of Exam</td>
+            <td width="20%">सत्र<br>Session</td>
+            <td width="20%">पाठ्यक्रम कोड <br>Course Code</td>
+            <td width="20%">समय<br>Time*</td>
+        </tr>
+
+        <tr class="td3">
+            <td></td>
+            <td>-</td>
+            <td>BCSL056</td>
+            <td>-</td>
+        </tr>
+
+        <tr class="td3">
+            <td></td>
+            <td>-</td>
+            <td>BCSL057</td>
+            <td>-</td>
+        </tr>
+
+        <tr class="td3">
+            <td></td>
+            <td>-</td>
+            <td>BCSL058</td>
+            <td>-</td>
+        </tr>
+
+        <tr class="td3">
+            <td></td>
+            <td>-</td>
+            <td>BCSL063</td>
+            <td>-</td>
+        </tr>
+
+        <tr class="td3">
+            <td>10/12/2024</td>
+            <td>Afternoon</td>
+            <td>MCS012</td>
+            <td>02:00 PM - 05:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>13/12/2024</td>
+            <td>Morning</td>
+            <td>BCS041</td>
+            <td>10:00 AM - 01:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>16/12/2024</td>
+            <td>Morning</td>
+            <td>BCS051</td>
+            <td>10:00 AM - 01:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>16/12/2024</td>
+            <td>Afternoon</td>
+            <td>MCS022</td>
+            <td>02:00 PM - 05:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>21/12/2024</td>
+            <td>Morning</td>
+            <td>BCS012</td>
+            <td>10:00 AM - 01:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>26/12/2024</td>
+            <td>Morning</td>
+            <td>BCS052</td>
+            <td>10:00 AM - 01:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>27/12/2024</td>
+            <td>Morning</td>
+            <td>BCS053</td>
+            <td>10:00 AM - 01:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>28/12/2024</td>
+            <td>Morning</td>
+            <td>BCS054</td>
+            <td>10:00 AM - 01:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>30/12/2024</td>
+            <td>Morning</td>
+            <td>BCS055</td>
+            <td>10:00 AM - 01:00 PM</td>
+        </tr>
+
+        <tr class="td3">
+            <td>31/12/2024</td>
+            <td>Afternoon</td>
+            <td>BCS062</td>
+            <td>02:00 PM - 05:00 PM</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+
+
+                <div align="justify">
+                    <i><b>टिप्पणी/Note-</b> 1. परीक्षा की अवधि प्रश्नपत्र के प्रथम पृष्ठ पर अंकित है । The duration of
+                        examination is mentioned on the first page of the question paper.
+                        <br>2. यह हाल टिकट पैरा सं. 18 में लिखित शर्तों को पूरा करने के अधीन वैध है / This Hall Ticket
+                        is valid subject to fulfil the conditions as mentioned in the Para No-18
+                        <br>3. In case the photo of the student is not visible in the hall ticket, you are requested to
+                        paste your latest Passport size photograph self attested for appearing in December, 2024
+                        TEE.</i>
+                </div>
+
+                <br>
+
+
+                <div align="left" style="width:90%; border: 1px solid black;">
+
+
+
+                    <meta charset="UTF-8">
+                    <title>Important Instructions</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            line-height: 1.6;
+                        }
+
+                        .title {
+                            text-align: center;
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            margin-bottom: 10px;
+                        }
+
+                        /* Initialize a counter for the paragraphs */
+                        .instructions {
+                            counter-reset: paragraph-counter;
+                        }
+
+                        /* Style each paragraph and add automatic numbering */
+                        .instructions p {
+                            counter-increment: paragraph-counter;
+                            margin-bottom: 5px;
+                            font-size: 1em;
+                            position: relative;
+                            padding-left: 1.5em;
+                            /* Space for the number */
+                        }
+
+                        .instructions p::before {
+                            content: counter(paragraph-counter) ". ";
+                            font-weight: bold;
+                            position: absolute;
+                            left: 0;
+                        }
+                    </style>
+
+
+
+                    <div align="left" style="width:100%; border: 1px solid black;">
+                        <font class="td3" style="font-weight:bold">IMPORTANT NOTE: </font>
+
+                        <ol type="I">
+                            <b>The University reserves the right to:</b>
+
+                            <li>
+                                <p>Reschedule / cancel the examinations/ papers at any time in all Examination Centre
+                                    across the country or in any particular Examination Centre/ State due to any
+                                    exigency or any other reason. In such cases, the decision of the University will be
+                                    final and the cancelled Paper/Exam will be conducted in the next
+                                    Term-end-Examination and Exam fees will be adjusted accordingly; and;</p>
+                            </li>
+
+                            <li>
+                                <p>Reschedule/ cancel/ shift the date of examination due to unforeseen circumstances in
+                                    a particular examination centre/all examination centre or in any particular State or
+                                    throughout the Country and such paper will be held in the next term of examination
+                                    and accordingly fees paid for appearing the Term-end-Examination/particular
+                                    examination will be adjusted.</p>
+                            </li>
+
+                            <li>
+                                <p>The University will try to accommodate the students in the examination centre opted
+                                    by them. However, in case, the sitting capacity at the centre has exhausted, student
+                                    will be allotted the nearest/alternate exam centre under the jurisdiction of the
+                                    same Regional Centre. <b>The University reserves the right to shift the students
+                                        from one exam centre to another exam centre due to any exigency/reason.</b></p>
+                            </li>
+                        </ol>
+
+                    </div>
+
+
+                    <div class="container">
+                        <h2>महत्त्वपूर्ण अनुदेश / Important Instructions</h2>
+                    </div>
+                    <div class="instructions">
+                        <b>निम्नलिखित अनुदेशों को ध्यानपूर्वक पढिए और उसका अनुपालन कीजिए / Please read the following
+                            instructions carefully and follow them</b><br>
+                        <p> परीक्षार्थी उत्तर पुस्तिका में अपने अनुक्रमांक अत्यंत सावधानीपूर्वक लिखें । अस्पष्ट, भ्रामक
+                            अथवा गलत अनुक्रमांक अंकित करने की दशा में परीक्षा परिणाम घोषित नहीं किया जाएगा । यदि
+                            परीक्षार्थी का अनुक्रमांक 10 अंकों के बजाय 9 अंकों का है, तो उसे अंतिम कोष्ठक में क्रॉस का
+                            चिह्न (X) अंकित करना चाहिए । अनुक्रमांक को 10 अंकों का बनाने के लिए प्रारंभ में शून्य का
+                            प्रयोग न करें । परीक्षा केंद्र का कोड भी इसी प्रकार से भरा जाना चाहिए।<br>
+                            The examinees should carefully write their enrollment numbers on the answer sheet. In case
+                            of an ambiguous, deceptive or incorrect enrollment number being entered, the result will not
+                            be declared. If the enrollment number of the examinee is 9 digits instead of 10 digits, then
+                            x (cross) should be marked in the last bracket. Don’t add zero before the enrollment number
+                            to make it 10 digits. The Code of the Examination Centre should also be entered in similar
+                            way.</p>
+                        <p> कृपया यह नोट कर लें कि मुख्य उत्तर पुस्तिका के अतिरिक्त अन्य कोई पूरक उत्तर पुस्तिका प्रदान
+                            नहीं की जायेगी । अतः परीक्षार्थियों को चाहिए कि प्रत्येक लाइन में लिखें तथा कोई भी पृष्ठ
+                            खाली न छोड़ें । <b>यदि भूलवश कोई पृष्ठ खाली छूट जाता है तो उस पर पीटीओ अंकित करें।</b><br>
+                            Please note that no supplementary answer sheet will be provided apart from the main answer
+                            sheet. Therefore, candidates should write in each line and not leave blank pages. If any
+                            page is accidentally left blank, write PTO on it.</p>
+                        <p> कृपया परीक्षा के दौरान उपस्थित पत्रक पर अपने नाम एवं अनुक्रमांक के सामने निर्धारित कालम में
+                            हस्ताक्षर अवश्य करें। यदि किसी परीक्षार्थी द्वारा निर्धारित कालम के अतिरिक्त अन्य कहीं
+                            हस्ताक्षर किया जाता है अथवा हस्ताक्षर नहीं किया जाता है तो ऐसी स्थिति में उसे अनुपस्थित माना
+                            जाएगा ।<br>
+                            Please sign on the attendance sheet during the examination in the prescribed column in front
+                            of your name and enrollment number. In case a candidate has not signed or signed anywhere
+                            other than in the prescribed column, he/she will be treated as absent.</p>
+                        <p><b>उम्मीदवारों को केवल हॉल टिकट / प्रवेश पत्र में उल्लिखित पाठ्यक्रम में ही परीक्षा देने की
+                                अनुमति दी गई है।</b> <br>
+                            Candidates are allowed to appear for the examination only in the courses mentioned in the
+                            hall ticket/admit card. </p>
+
+                        <p> कक्ष निरीक्षक के पास उत्तर पुस्तिका जमा करने से पूर्व परीक्षार्थी जांच कर लें कि निर्धारित
+                            स्थान पर स्वयं के हस्ताक्षर, कक्ष निरीक्षक के हस्ताक्षर तथा परीक्षा केंद्र की मुहर लगी हो
+                            ।<br>
+                            Before submitting the answer sheet to the invigilator, the candidate should check that
+                            his/her signature, the invigilator's signature and the examination Centre’s stamp is affixed
+                            at the designated place.</p>
+                        <p>परीक्षार्थी यह नोट कर लें कि उन्हें हाल टिकट/प्रवेश पत्र पर उल्लिखित परीक्षा केन्द्र के अलावा
+                            किसी अन्य परीक्षा केन्द्र पर परीक्षा देने की अनुमति नहीं दी जाएगी। <b>यदि कोई उम्मीदवार
+                                किन्ही कारणों से किसी अन्य परीक्षा केन्द्र पर परीक्षा देता है तो उसका परीक्षा परिणाम
+                                घोषित नहीं किया जाएगा । </b> <br>
+                            Examinees should note that they shall not be allowed to appear at any other Exam Centre
+                            except the Venue mentioned in the Admit Card. If a candidate appears at any other Exam
+                            Centre due to any reason, his/her result shall not be declared. </p>
+                        <p>सामाजिक न्याय एवं सशक्तीकरण मंत्रालय (एमओएसजे एवं ई) नई दिल्ली द्वारा 29 अगस्त, 2018 तथा 10
+                            अगस्त, 2022 को जारी कार्यालय ज्ञापन के अनुसार श्रुति लेखक (Amanuensis)/प्रतिपूर्ति
+                            समय-प्राप्ति की अनुमति की माँग करने वाले बेंचमार्क अक्षमताग्रस्त (दिव्यांगजन) परीक्षार्थी
+                            श्रुति लेखक/प्रतिपूर्ति समय-प्राप्ति की अनुमति हेतु संबंद्ध क्षेत्रीय केंद्र से संपर्क
+                            स्थापित कर सकते हैं।<br>
+                            The examinees with Benchmark Disabilities (Divyangjan) seeking permission for Amanuensis
+                            (writer)/ compensatory time as per the Office Memorandum issued by the Govt. of India,
+                            MOSJ&amp;E, New Delhi, dated 29th August 2018 &amp; 10th Aug 2022, <b>may contact the
+                                respective Regional Centre for obtaining permission of using amanuensis/compensatory
+                                time. </b> </p>
+                        <p><b>परीक्षा के दौरान परीक्षार्थियों के पास इग्नू द्वारा जारी वैध पहचान पत्र होना चाहिए। </b>
+                            यदि किसी कारण से परीक्षार्थी के पास इग्नू द्वारा जारी वैध पहचान पत्र नहीं है, तो वे परीक्षा
+                            हॉल में प्रवेश के लिए किसी भी सरकारी संस्थान द्वारा जारी फोटोयुक्त वैध पहचान पत्र दिखा सकते
+                            हैं।<br>
+                            <b>Examinees must be in possession of a valid Identity Card issued by IGNOU during the
+                                examination.</b> If for some reason, the examinee does not have his/her valid identity
+                            card, they may show any valid Photo Identity card issued by any Government Institution for
+                            entry in the examination hall.
+                        </p>
+                        <p>परीक्षा हॉल के अंदर मोबाइल फोन या कोई अन्य इलेक्ट्रॉनिक उपकरण ले जाना सख्त मना है।<br>
+                            Mobile Phones or any other electronic gadgets are strictly prohibited inside the Examination
+                            Hall.</p>
+                        <p> परीक्षा में कैलकुलेटर के उपयोग की अनुमति है, जब तक कि प्रश्न पत्र में निर्देशों के माध्यम से
+                            मना ना किया गया हो <br>
+                            Calculators are allowed for use in the examination, unless otherwise not permitted through
+                            instructions in the question paper.</p>
+                        <p>परीक्षा का माध्यम: परीक्षार्थियों को प्रश्नों के उत्तर केवल उसी भाषा में लिखने होते हैं
+                            जिसमें पाठ्यक्रम संचालित किया जाता है। यद्यपि, परीक्षार्थियों के पास हिंदी माध्यम में
+                            परीक्षा देने का विकल्प है, भले ही उनका पंजीकरण अंग्रेजी माध्यम में ही क्यों न हुआ हो।<br>
+                            <b<medium of="" examination:<="" b=""> The examinees are required to write answers to the
+                                questions in the languages in which the Programme is offered. However, the examinees
+                                have an option to attempt the Examination of the courses in Hindi medium irrespective of
+                                registration of the same is in English medium </b<medium>
+                        </p>
+                        <p>किसी अन्य क्षेत्रीय भाषा में लिखे गए उत्तरों का मूल्यांकन नहीं किया जाएगा ,जिसमें पाठ्यक्रम
+                            का संचालन नहीं किया जाता है और ऐसे पाठ्यक्रम की परीक्षा परीक्षार्थियों को बिना किसी सूचना के
+                            रद्द कर दी जाएगी। ऐसे मामलों में, परीक्षार्थियों को बाद की परीक्षा में फिर से सम्मिलित होना
+                            होगा।<br>
+                            Answers written in any other regional language in which the Programme is not offered, will
+                            not be evaluated and the examination in such course will be canceled without any intimation
+                            to the examinees. In such cases, the examinees will be required to reappear in the
+                            subsequent examination.<br>
+                            <br>
+                            नोट:- सीआरडी, पीजीडीआरडी और एमएआरडी में टीईई जून 2024 और उसके बाद उपस्थित होने वाले
+                            शिक्षार्थियों को बंगाली भाषा में भी अपनी स्क्रिप्ट लिखने की अनुमति है। पाठ्यक्रम का विवरण
+                            नीचे दिया गया है। <br>
+                            <b>Note :- Learners appearing the TEE June 2024 and onwards in CRD, PGDRD &amp; MARD are
+                                permitted to write their scripts in Bengali Language also. Courses details are given
+                                below:-</b><br>
+                            MRD201, MRD202, MRD203, MRD004, MRDP001, MRDE201, MRDE202, MRDE203, MRDE002, MRDE003,
+                            MRDE004 &amp; MRDP
+                        </p>
+                        <p>निम्नलिखित आठ पाठ्यक्रमों के प्रश्न पत्र वस्तुनिष्ठ प्रकार (बहुविकल्पीय प्रश्न पैटर्न) के
+                            होंगे और केवल ओएमआर शीट पर आयोजित किए जाएंगे:<br>
+                            Question Papers of the following Eight courses will be of Objective type (Multiple Choice
+                            Questions pattern) and conducted on OMR sheets only:
+                        </p><br>
+                        <table style="width:50%; margin-left: 20px; " border="2">
+                            <tbody>
+                                <tr "align=" center&quot;">
+                                    <th>Course Name</th>
+                                    <th>PCO01</th>
+                                    <th>BSHF101</th>
+                                    <th>FST01</th>
+                                    <th>BLI011</th>
+                                    <th>BLII012</th>
+                                    <th>BLII013</th>
+                                    <th>BLII014</th>
+                                    <th>BAVAE181</th>
+                                    <th>BSSS183</th>
+                                </tr>
+                                <tr>
+                                    <th>Course Code</th>
+                                    <td>1113</td>
+                                    <td>1116</td>
+                                    <td>1117</td>
+                                    <td>4111</td>
+                                    <td>4112</td>
+                                    <td>4113</td>
+                                    <td>4114</td>
+                                    <td>5111</td>
+                                    <td>6111</td>
+                                </tr>
+
+                            </tbody>
+                        </table><br>
+                        सीसीएच प्रोग्राम के अंतर्गत शामिल कोर्स कोड BNS041 एवं BNS042 की परीक्षा केवल वर्णात्मक मोड में
+                        आयोजित की जाएगी<br>
+                        The examination for course code BNS041 and BNS042 under CCH program will be conducted in
+                        descriptive mode only<br>
+                        <p>यदि पाठ्यक्रम- एक ही समूह (समूह 1 से समूह 6) के अथवा बैकलॉग पाठ्यक्रम, विभिन्न प्रोग्रामों के
+                            पाठ्यक्रम और एमपी प्रोग्राम, विभिन्न विशेषज्ञताओं के पाठ्यक्रम हैं तो, परीक्षा की तिथि और
+                            सत्र में परिवर्तन के अनुरोध पर विचार नहीं किया जाएगा।<br>
+                            The request for change in the date and session of the exam will not be entertained in case
+                            the courses are from the same Group (Group 1 to group 6) or the courses are backlog courses,
+                            the courses from the different programmes and in MP Programme, courses from different
+                            specializations.</p>
+                        <p> बीएलआईएस प्रोग्राम के अलावा अन्य प्रायोगिक/लैब पाठ्यक्रमों में भाग लेने के लिए पंजीकृत
+                            विद्यार्थियों को सलाह दी जाती है कि वे परीक्षा स्थल और परीक्षा तिथि की जानकारी के लिए अपने
+                            क्षेत्रीय केंद्र से संपर्क करें।<br>
+                            Students registered for appearing in Practical/Lab courses other than the BLIS Programme are
+                            advised to contact their Regional Centre for venue and schedule of exams.</p>
+                        <p>प्रश्न पत्र वितरित होने के 15 मिनट बाद परीक्षा हॉल में प्रवेश की अनुमति नहीं दी जाएगी ।
+                            तथापि, केंद्र अधीक्षक वैध कारण के आधार पर 30 मिनट तक की देरी को माफ कर सकता है।<br>
+                            Entry into the examination hall shall be closed after 15 minutes of the distribution of the
+                            question paper. However, the Centre Superintendent may condone the delay up to 30 minutes on
+                            account of a bonafide reason.</p>
+                        <p>परीक्षा शुरू होने के एक घंटे की समाप्ति से पहले किसी भी छात्र को परीक्षा हॉल छोड़ने या
+                            प्रश्नपत्र ले जाने की अनुमति नहीं दी जाएगी।।<br>
+                            No student will be allowed to leave the examination hall or take away the question paper
+                            before the expiry of one hour of commencement of the examination.</p>
+                        <p> हाल टिकट वैध है, यदि :-<br>
+                            पुन: प्रवेश अवधि (यदि लागू हो) सहित प्रोग्राम की वैधता समाप्त न हुई हो । (ii) भरे गए
+                            पाठ्यक्रम कोड चुने गए/पंजीकृत पाठ्यक्रम हैं। (iii) भरे गए पाठ्यक्रम कोड के पुनर्मूल्यांकन के
+                            लिए आवेदन नहीं किया हो। (iv) भरे हुए पाठ्यक्रम कोड के पुनर्मूल्यांकन के लिए आवेदन किया गया
+                            हो, तो तत्काल पिछले सत्रांत परिणाम का पुनर्मूल्यांकन परिणाम जो भी अधिक हो, मार्कशीट में
+                            अधिसूचित किया जाएगा। (v) कृपया उपनाम सहित अपने नाम की वर्तनी जांच लें, यदि सही नहीं है, तो
+                            तुरंत एसआरडी को सूचित करें। (vi) छूट योजना के अन्तर्गत शामिल न हो।<br>
+                            The hall ticket is valid if:-<br>
+                            The validity of programme is not over including re-admission period if applicable. (ii)
+                            Filled in course codes are opted/registered courses. (iii)Not applicable for the
+                            re-evaluation of the filled in course codes. (iv)If applied for the re-evaluation of filled
+                            in course codes, the re-evaluation result of the immediate previous term end result
+                            whichever is higher will be notified in the mark sheet.(v) Please check your name spelling
+                            including surname, If not correct, immediately report to the SRD. (vi) Not covered under
+                            exemption scheme.</p>
+                        <p> किसी भी परीक्षार्थी को परीक्षा केंद्र के बाहर उत्तर पुस्तिका ले जाने की अनुमति नहीं है और
+                            यदि ऐसा पाया जाता है, तो मामला पुलिस और यू.एफ.एम में पंजीकृत किया जाएगा।<br>
+                            No Examinee is allowed to take away the Answer Sheet out of Exam Centre and if found, the
+                            case will be registered with the Police &amp; U.F.M.</p>
+                        <p> प्रतिरूपण की सूचना पुलिस को दी जाएगी।<br>
+                            Impersonation will be reported to the Police.</p>
+                        <p> विद्यार्थियों को सलाह दी जाती है कि वे भविष्य के संदर्भ के लिए अपने हॉल टिकट/प्रवेश पत्र की
+                            एक प्रति अच्छी स्थिति में सुरक्षित रखें।<br>
+                            Students are advised to preserve a copy of their hall ticket/ admit card in good condition
+                            for future reference.</p>
+                        <p><b>दिसम्बर 2024</b> परीक्षा के एसाइनमेंट / प्रोजेक्ट और प्रैक्टिकल मार्क्स, ग्रेड कार्ड में
+                            दिसम्बर 2024 टीईई परीक्षा के परिणाम के साथ अपलोड किए जाएंगे।<br>
+                            The Assignments/Project &amp; Practical Marks of December 2024 examination, will be uploaded
+                            with the result of December 2024 TEE in the Grade Card.</p>
+                        <p> (i) एमएसएल007 और एमएसएल013 पाठ्यक्रमों के लिए टीईई के लिए उपस्थित होने वाले छात्र परीक्षा
+                            केंद्र में अपना स्वयं का मानक द्विभाषी शब्दकोश लाएंगे। (ii) छात्रों को मोबाइल डिवाइस या टेबल
+                            पर किसी भी इलेक्ट्रॉनिक शब्दकोश का उपयोग करने की अनुमति नहीं दी जाएगी।<br>
+                            (i) Students appearing for the TEE for the courses MSL007 and MSL013 shall bring their own
+                            standard bilingual dictionary to the exam centre. (ii) Students shall not be permitted to
+                            use any electronic dictionary on mobile devices or tables.</p>
+                        <p>एम.ए.&nbsp;ज्योतिष&nbsp;कार्यक्रम&nbsp;के&nbsp;प्रथम&nbsp;एवं&nbsp;द्वितीय&nbsp;वर्ष&nbsp;की&nbsp;परीक्षा&nbsp;देने&nbsp;वाले&nbsp;विद्यार्थियों&nbsp;को&nbsp;पंचांग&nbsp;एवं&nbsp;कैलकुलेटर&nbsp;लाना&nbsp;अनिवार्य&nbsp;है,
+                            अतः उन्हें
+                            एम.जे.वाई.-01&nbsp;से&nbsp;एम.जे.वाई.-08&nbsp;तक&nbsp;की&nbsp;किसी&nbsp;भी&nbsp;परीक्षा&nbsp;में&nbsp;पंचांग&nbsp;एवं&nbsp;कैलकुलेटर&nbsp;लाने&nbsp;की&nbsp;अनुमति&nbsp;है।<br>
+                            The student of first and second year examinations of the M.A. Jyotish program are required
+                            to see the Panchang and Calculator is also relevant, hence, they are allowed to bring
+                            Panchang and Calculator in any examination from MJY-01 to MJY-08.</p>
+
+                    </div>
+                    <p align="right"><b>कुलसचिव (एसईडी ) / Registrar(SED)</b></p>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </form>
+    </div>
+
+    <p class="noprint">
+        <font class="cfont"><a href="javascript:history.back(-1)">Back</a> &nbsp;&nbsp;&nbsp;&nbsp;<a
+                href="javascript:window.print()">Print</a></font>
+    </p>
+</body>
+
+</html>
+
+
+
+
